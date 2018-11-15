@@ -11,9 +11,23 @@ header nav ul li a { font-size: 0.8em; color: #FFF !important; display: block; p
 header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20, 20, 0.8); box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); border-radius: 6px; }
 
 .search_ico {width: 60px; height: 100%;position: absolute; right: 6%; top: 0; cursor: pointer;  background:url(../img/search.png) no-repeat center; z-index: 9999; }
-/*------ media nav------*/
+/*------ 【media nav】------*/
 .open_nav,.m_nav,.m_logo{display: none;}
 /*.search_ico{ display: block;  padding: 0; margin: 0; line-height: 100px; }*/
+
+/*m_nav_list right*/
+.cover{position:fixed;left:0;top:10%;background: #00A7EB;width:100%;height:100%;filter:alpha(opacity=60);opacity:0.6;display:none;z-Index:99999;}
+/*m_nav ico*/
+.open_nav { display: none; margin: 15px 0 0 0; width: 24px; height: 40px; float: left; text-align: center; padding: 0 10px; }
+.nav_icon { display: block; position: relative; width: 30px; height: 5px; background-color: #fff; margin-top: 20px; }
+.nav_icon:before, .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
+.nav_icon:before { margin-top: -10px; }
+.nav_icon:after { margin-top: 10px; }
+.open .nav_icon { background: none }
+.open .nav_icon:before { margin-top: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.open .nav_icon:after { margin-top: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.open .nav_icon:before, .open .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; }
+
 
 /* -----------------------content----------------- */
 .content{
@@ -26,16 +40,16 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 }
 
 /* -----------------------footer----------------- */
-footer{width: 100%; color: #a5a4a4;text-align: center !important;}
+footer{width: 100%; color: #a5a4a4;text-align: center;}
 
 footer .footer-mid{width: 100%;height:80px;background: rgba(0, 0, 0, 0.55);position: relative; }
-footer .footer-mid div{width:100%;float: left;}
+footer .footer-mid div{width:100%;float: left; font-family: 楷体; }
 footer .footer-mid ul li a{ color: aliceblue;font-size: 0.7em}
 footer .footer-mid .links{width: 30%;}
 footer .footer-mid .maps{width: 30%;}
 footer .footer-mid .contact{width: 30%;}
 
 
-footer .footer-bottom{width:100%;height:20px;background: #000;text-align: -webkit-left; }
+footer .footer-bottom{width:100%;height:20px;background: #000;text-align: center; }
 footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 footer .footer-bottom p a{color: cadetblue;}
