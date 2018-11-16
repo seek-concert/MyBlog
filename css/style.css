@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* -----------------------header----------------- */
+/*=========================【header】=========================== */
 header { position:fixed;top: 0;width: 100%;  background: #222; height: 10%; border-bottom: #464647 1px solid;  z-index:9999}
 header .logo{ position:absolute;left: 3%;width: 20%;height: 100%; }
 header .logo img{ position:absolute;width: 100%;height: 100%;}
@@ -12,11 +12,9 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 
 .search_ico {width: 60px; height: 100%;position: absolute; right: 6%; top: 0; cursor: pointer;  background:url(../img/search.png) no-repeat center; z-index: 9999; }
 /*------ 【media nav】------*/
-.open_nav,.m_nav,.m_logo{display: none;}
-/*.search_ico{ display: block;  padding: 0; margin: 0; line-height: 100px; }*/
+.open_nav,.m_nav,.m_logo,.m_nav_list{display: none;}
+/*.search_ico{ display: block;  m_navpadding: 0; margin: 0; line-height: 100px; }*/
 
-/*m_nav_list right*/
-.cover{position:fixed;left:0;top:10%;background: #00A7EB;width:100%;height:100%;filter:alpha(opacity=60);opacity:0.6;display:none;z-Index:99999;}
 /*m_nav ico*/
 .open_nav { display: none; margin: 15px 0 0 0; width: 24px; height: 40px; float: left; text-align: center; padding: 0 10px; }
 .nav_icon { display: block; position: relative; width: 30px; height: 5px; background-color: #fff; margin-top: 20px; }
@@ -29,7 +27,7 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 .open .nav_icon:before, .open .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; }
 
 
-/* -----------------------content----------------- */
+/* ============================【content】==================== */
 .content{
     width: 100%;
     height: 80%;
@@ -39,10 +37,10 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
     overflow: hidden
 }
 
-/* -----------------------footer----------------- */
-footer{width: 100%; color: #a5a4a4;text-align: center;}
+/* ============================【footer】===================== */
+footer{width: 100%; color: #a5a4a4;text-align: center;overflow: hidden;}
 
-footer .footer-mid{width: 100%;height:80px;background: rgba(0, 0, 0, 0.55);position: relative; }
+footer .footer-mid{width: 100%;height:80px;background: rgba(0, 0, 0, 0.55);position: relative;overflow: hidden; }
 footer .footer-mid div{width:100%;float: left; font-family: 楷体; }
 footer .footer-mid ul li a{ color: aliceblue;font-size: 0.7em}
 footer .footer-mid .links{width: 30%;}

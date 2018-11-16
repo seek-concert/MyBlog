@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(".open_nav").click(function () {
         console.log('111');
         $(".m_nav_list").toggle();
-        $(".cover").toggle();
+        $(".m_nav").toggle();
         $(".open_nav").toggleClass("open");
     });
 });
