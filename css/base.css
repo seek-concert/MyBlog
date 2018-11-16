@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* ------------------------------------全局定义---------------------------------------- */
+/* ------------------------------------[base]---------------------------------------- */
 *,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0;padding:0;}
 ul, li { list-style: none; }
 img{ border:0 none;}
@@ -13,12 +13,7 @@ h5{ font-size:14px;}
 h6{ font-size:12px;}
 input,select{ font-size:12px; vertical-align:middle;}
 html{font-size:0.6em;}
-
 body{font:normal 100% Arial,sans-serif; font-size:22px; background:#333;color: #fff;text-align:center;}
-
-/* 标签属性，textarea,input 强制输入时内容超出时换行 */
 textarea,input{ word-wrap:break-word; word-break:break-all; padding:0;}
-/*图片缩放失真*/
 img { width:100%; -ms-interpolation-mode: bicubic;}
-/* 元素成块 */
 footer, header, menu, nav {display: block;}

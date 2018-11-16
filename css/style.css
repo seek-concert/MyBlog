@@ -3,19 +3,17 @@
 header { position:fixed;top: 0;width: 100%;  background: #222; height: 10%; border-bottom: #464647 1px solid;  z-index:9999}
 header .logo{ position:absolute;left: 3%;width: 20%;height: 100%; }
 header .logo img{ position:absolute;width: 100%;height: 100%;}
-
+/*------ 【pc nav】------*/
 header nav {position:absolute; transform:translate(0%,0%);left: 35%;top:10%;width: 100%;height: 100%;   }
 header nav ul{line-height: 100% !important;}
 header nav ul li { display: inline;}
 header nav ul li a { font-size: 0.8em; color: #FFF !important; display: block; padding:1%;  float: left }
 header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20, 20, 0.8); box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); border-radius: 6px; }
-
+/*-----------search_ico ico-----------*/
 .search_ico {width: 60px; height: 100%;position: absolute; right: 6%; top: 0; cursor: pointer;  background:url(../img/search.png) no-repeat center; z-index: 9999; }
 /*------ 【media nav】------*/
 .open_nav,.m_nav,.m_logo,.m_nav_list{display: none;}
-/*.search_ico{ display: block;  m_navpadding: 0; margin: 0; line-height: 100px; }*/
-
-/*m_nav ico*/
+/*-----------m_nav ico-----------*/
 .open_nav { display: none; margin: 15px 0 0 0; width: 24px; height: 40px; float: left; text-align: center; padding: 0 10px; }
 .nav_icon { display: block; position: relative; width: 30px; height: 5px; background-color: #fff; margin-top: 20px; }
 .nav_icon:before, .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
@@ -25,7 +23,6 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 .open .nav_icon:before { margin-top: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 .open .nav_icon:after { margin-top: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .open .nav_icon:before, .open .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; }
-
 
 /* ============================【content】==================== */
 .content{
@@ -39,15 +36,14 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 
 /* ============================【footer】===================== */
 footer{width: 100%; color: #a5a4a4;text-align: center;overflow: hidden;}
-
+/*-----------footer bottom-----------*/
 footer .footer-mid{width: 100%;height:80px;background: rgba(0, 0, 0, 0.55);position: relative;overflow: hidden; }
 footer .footer-mid div{width:100%;float: left; font-family: 楷体; }
 footer .footer-mid ul li a{ color: aliceblue;font-size: 0.7em}
 footer .footer-mid .links{width: 30%;}
 footer .footer-mid .maps{width: 30%;}
 footer .footer-mid .contact{width: 30%;}
-
-
+/*-----------footer db-----------*/
 footer .footer-bottom{width:100%;height:20px;background: #000;text-align: center; }
 footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 footer .footer-bottom p a{color: cadetblue;}

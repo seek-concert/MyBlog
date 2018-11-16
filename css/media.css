@@ -1,77 +1,83 @@
 @charset "utf-8";
+/*================【屏幕：1024-1199】==================*/
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    /*-------- header ------------*/
     header nav ul li a{font-size: 0.8em}
     .search_ico{position: absolute; right: 1%;}
     .open_nav,.m_nav,.m_logo,.m_nav_list{display: none;}
 
+    /*----------footer-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
-
+/*================【屏幕：960-1023】==================*/
 @media screen and (min-width: 960px) and (max-width: 1023px) {
+    /*-------- header ------------*/
     header nav ul li a{font-size: 0.8em}
     .search_ico{position: absolute; right: 1%;}
     .open_nav,.m_nav,.m_logo,.m_nav_list{display: none;}
 
+    /*----------footer-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align:center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
-
+/*================【屏幕：768-959】==================*/
 @media screen and (min-width: 768px) and (max-width: 959px) {
+    /*-------- header ------------*/
     header{ width: 100%; margin: auto; }
     .nav,.logo { display: none;}
     .open_nav{display: block;}
-
-
+    /*---- header logo---*/
     header .m_logo{ display:block;position:absolute;top:20%;left: 20%;right: 20%;height: 60%; }
     header .m_logo img{ width: 100%;height: 100%;}
-
+    /*---- header search_ico---*/
     .search_ico{position: absolute; right: 1%;}
-
+    /*---- header m_nav---*/
     .m_nav{display:none;position:fixed;left:0;top:10%;background: black;width:100%;height:100%;filter:alpha(opacity=60);opacity:0.6;z-index: 999}
     .m_nav ul{display: none;background-color: white;width:50%;height: 100%;z-index: 1000}
     .m_nav ul li{-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);}
     .m_nav ul li a:hover{ margin-left: 20%;}
-    /* footer */
+    /*----------footer-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
-
+/*================【屏幕：480-767】==================*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*-------- header ------------*/
     header{ width: 100%; margin: auto; }
     .nav,.logo { display: none;}
     .open_nav{display: block;position: fixed;top: -1%;}
-
+    /*---- header logo---*/
     header .m_logo{ display:block;position:absolute;top:20%;left: 20%;right: 20%;height: 60%; }
     header .m_logo img{ width: 100%;height: 100%;}
-
+    /*---- header search_ico---*/
     .search_ico{position: absolute; right: 0;}
-
+    /*---- header m_nav---*/
     .m_nav{display:none;position:fixed;left:0;top:10%;background: black;width:100%;height:100%;filter:alpha(opacity=60);opacity:0.6;z-index: 999}
     .m_nav ul{display: none;background-color: white;width:50%;height: 100%;z-index: 1000}
     .m_nav ul li{-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);}
     .m_nav ul li a:hover{ margin-left: 20%;}
-    /* footer */
+    /*----------footer-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
-
+/*================【屏幕：<479】==================*/
 @media only screen and (max-width: 479px) {
+    /*-------- header ------------*/
     header{ width: 100%; margin: auto; }
     .nav,.logo { display: none;}
     .open_nav{display: block; position: fixed;top: -1%;}
-
+    /*---- header logo---*/
     header .m_logo{ display:block;position:absolute;top:20%;left: 20%;right: 20%;height: 60%; }
     header .m_logo img{width: 100%;height: 100%;}
-
+    /*---- header search_ico---*/
     .search_ico{position: absolute; right: -2%;}
-
-
+    /*---- header m_nav---*/
     .m_nav{display:none;position:fixed;left:0;top:10%;background: black;width:100%;height:100%;filter:alpha(opacity=60);opacity:0.6;z-index: 999}
     .m_nav ul{display: none;background-color: white;width:50%;height: 100%;z-index: 1000}
     .m_nav ul li{-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09); box-shadow: 0 -1px 0 rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.09);}
     .m_nav ul li a:hover{ margin-left: 20%;}
-    /* footer */
+    /*----------footer-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
