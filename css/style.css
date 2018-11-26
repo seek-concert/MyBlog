@@ -1,14 +1,15 @@
 @charset "utf-8";
 /*=========================【header】=========================== */
-header { position:fixed;top: 0;width: 100%;  background: #222; height: 10%; border-bottom: #464647 1px solid;  z-index:9999}
-header .logo{ position:absolute;left: 3%;width: 20%;height: 100%; }
-header .logo img{ position:absolute;width: 100%;height: 100%;}
+header { position:fixed;top: 0;width: 100%;  background: #222; height: 70px; border-bottom: #464647 1px solid;  z-index:9999}
+header .logo{ position:absolute;left: 12%;width: 20%;height: 100%; }
+header .logo img{ width: 100%;height: 100%;}
 /*------ 【pc nav】------*/
-header nav {position:absolute; transform:translate(0%,0%);left: 35%;top:10%;width: 100%;height: 100%;   }
+header nav {position:absolute; transform:translate(0%,0%);left: 35%;top:11%;width: 100%;height: 100%;   }
 header nav ul{line-height: 100% !important;}
 header nav ul li { display: inline;}
 header nav ul li a { font-size: 0.8em; color: #FFF !important; display: block; padding:1%;  float: left }
 header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20, 20, 0.8); box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); border-radius: 6px; }
+.nav_toggle{ color: cadetblue !important; background: rgba(20, 20, 20, 0.8); box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); border-radius: 6px; }
 /*-----------search_ico ico-----------*/
 .search_ico {width: 60px; height: 100%;position: absolute; right: 6%; top: 0; cursor: pointer;  background:url(../img/search.png) no-repeat center; z-index: 9999; }
 /*------ 【media nav】------*/
@@ -24,21 +25,88 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 .open .nav_icon:after { margin-top: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .open .nav_icon:before, .open .nav_icon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #fff; }
 
+
 /* ============================【content】==================== */
-.content{
-    width: 100%;
-    height: 80%;
-    position: relative;
-    top:80px;
-    margin-bottom: 101px;
-    overflow: hidden
-}
+.content{width: 100%;height: 80%;position: relative;top:80px;margin-bottom: 101px;overflow: hidden;}
+.content .content_top { width:100%;height: 260px; position:relative;top:5px;left:13%;right: 10%;  overflow: hidden; clear: both; }
+.content a:hover{color: cadetblue;}
+/*------------- [banner] -------------*/
+.content .content_top .banner_hide {  width: 48%; height: 100%;  -webkit-animation: pageTop 6s ease 0.5s backwards; -moz-animation: pageTop 6s ease 0.5s backwards; -ms-animation: pageTop 6s ease 0.5s backwards; -o-animation: pageTop 6s ease 0.5s backwards; animation: pageTop 6s ease 0.5s backwards; float: left; }
+.content .content_top .banner_hide img{ height: 100%;width: 100%}
+.content .content_top .banner_font {font-size: 0.5em; display:block;height:40%;width:46%;position: absolute; top: 20%; padding-left: 1%; padding-right: 1%; background: rgba(153,153,153,.8); color: white; opacity: 0; -webkit-transition: opacity .75s ease-out; -moz-transition: opacity .75s ease-out; -o-transition: opacity .75s ease-out; transition: opacity .75s ease-out; }
+.content .content_top .banner_hide:hover .banner_font { opacity: 1; } /* 用opacity 设置鼠标放上去显示文字的效果 */
+.content .content_top .banner_font strong { display: block; line-height: 40px }
+/*------------- [bulletin] -------------*/
+.content .bulletin{margin-left:2%;box-shadow: 0 1px 0 rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); border-radius: 6px; background: url(../img/quote-bg.png) no-repeat top right rgba(42,42,42,1); width: 350px;  height: 260px;float: left; overflow: hidden}
+.content .bulletin h1{ color: cadetblue;padding-top: 5px;border-bottom: #333333 solid 2px;}
+.content .bulletin p{ color: white;padding-top: 5px;text-indent: 2em;}
+/*****************************************/
+.blank{width: 100%;height: 10px;overflow: hidden;margin: auto;}
+/*****************************************/
+/*-------------------【content_core】--------------------------*/
+.content_core{width: 100%;position: relative;top:20px;left:13%;right:10%;overflow: hidden;clear: both;}
+.content_core .blog_list{width: 50%; float: left;}
+.blog_list>li {width:100%;padding: 20px 0;border-right: #111 2px solid; }
+.arrow_box { background: #222; box-shadow: 0 1px 0 rgba(255,255,255,.1), inset 0 1px 1px rgba(0,0,0,.7); width: 93.6%; color: #b9b9b9; border-radius: 6px; position: relative; }
+.arrow_box:hover{background: #222222;}
+.ti { width: 0; height: 0; border-style: solid; border-width: 0px 0 20px 22px; border-color: transparent transparent transparent #111; position: absolute; left: 100%; top: 20px; }/* 三角形 */
+.ci { width: 10px; height: 10px; border-radius: 50%; position: absolute; left: 106%; top: 16px; background: #000; border: 2px solid #333; } /* 圆形定义边框色与背景一致 */
+.ci:hover { border: 2px solid #B9B9B9; }
+.arrow_box h2.title { text-align:left;padding: 0 0 0 20px; font: 16px/50px "微软雅黑", "Microsoft YaHei", Arial, Helvetica, sans-serif }
+.arrow_box h2 a:hover { padding-left: 20px }
+.textinfo { overflow: hidden; }
+.textinfo p{ font-size: 0.6em; }
+.arrow_box img { width: 150px; padding: 4px 0 3px 4px; float: left; -webkit-transition: All 1s ease; -moz-transition: All 1s ease; -ms-transition: All 1s ease; -o-transition: All 1s ease; border-radius: 4px; margin: 0 20px 2px; }
+.arrow_box img:hover { opacity: 0.6; }
+.arrow_box p { line-height: 24px; padding: 0 20px 20px;text-align: left }
+.arrow_box p:hover { text-shadow: 1px 1px 1px #000; }
+.details { text-align:left;background: rgba(1,1,1,0.3); border-radius: 0 0 6px 6px; padding: 0 10px }
+.details li { line-height: 26px; display: inline; font-size: 11px; margin-right: 10px; }
+.details li a { margin-left:20px;color: #3F3E3C }
+.details li a:hover { color: #933 }
+.icon-time, .likes, .comments {background: url(../img/icons.png) no-repeat }
+.icon-time { background-position: 0 -208px;}
+.likes, .comments { float: right; }
+.likes { background-position: 0 -240px; }
+.comments { background-position: 0 -220px; }
+/*-------------------【aside】--------------------------*/
+.content_core aside { width: 20%; float: left; margin: 20px 0 0 20px; }
+.content_core aside h2, footer h2 { font-size: 16px; margin-bottom: 10px; text-shadow: #000 1px 1px 1px; color: #ccc }
+.content_core aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px; padding: 15px; background: #222; margin-bottom: 20px; overflow: hidden; }
+.tuijian li, .clicks li { text-align:left;font-size: 0.6em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden }
+.tuijian li a:hover { padding-left: 10px }
+.tuijian li span:before { content: "0"; }/* 数字列表前面统一加0  */
+.tuijian li span { margin-right: 10px; font-size: 14px; font-family: "微软雅黑"; }
+.tuijian li:nth-child(-n+3) span { width: 39px; color: #999 } /* 选择从第3个开始倒数也就是第三个前面的 */
+.tuijian li:nth-child(-n+3) strong { font-size: 24px; font-weight: normal; }
+.tuijian li:first-child span { color: #f8490b; } /* 选择第一个 */
+.tuijian li:nth-child(n+3) { line-height: 24px } /* 选择从第3个开始往后数 */
+.tuijian li:nth-child(4) { margin: 5px 0 0 0 } /* 选择第四个 */
+/* clicks */
+.clicks li { line-height: 24px; }
+.clicks li span:before { content: "【"; }
+.clicks li span:after { content: "】"; }
+.clicks li span a { padding: 0 5px; color: #366 }
+.clicks li a:hover { text-decoration: underline }
+/* music */
+.viny dl dd { color: #b9b9b9; line-height: 24px;font-size: 0.6em;text-align: left; }
+.art { background: url(../img/vinyl.png) no-repeat left; width: 130px; float: left; background-size: 120px; }
+.viny .art img { width: 90px; height: 90px; margin-left: 11px }
+.viny dd span { width: 12px; height: 24px; margin-right: 7px; float: left; display: block; }
+.icon-song span, .icon-artist span, .icon-album span, .icon-like span { background: url(../img/icons.png) no-repeat }
+.icon-song span { background-position: -33px -344px }
+.icon-artist span { background-position: -16px -344px }
+.icon-album span { background-position: 0 -344px }
+.icon-like span { background-position: -1px -299px; }
+.icon-like a { color: #B5783E }
+.icon-like a:hover { color: #FFF; text-decoration: underline }
+.music audio { width: 100%; padding-top: 10px }
 
 /* ============================【footer】===================== */
-footer{width: 100%; color: #a5a4a4;text-align: center;overflow: hidden;}
+footer{position:relative;bottom:0;width: 100%; color: #a5a4a4;text-align: center;overflow: hidden;}
 /*-----------footer bottom-----------*/
-footer .footer-mid{width: 100%;height:80px;background: rgba(0, 0, 0, 0.55);position: relative;overflow: hidden; }
-footer .footer-mid div{width:100%;float: left; font-family: 楷体; }
+footer .footer-mid{word-wrap:break-word;width: 100%;background: rgba(0, 0, 0, 0.55);position: relative;overflow: hidden; }
+footer .footer-mid div{padding-top:10px;padding-bottom:10px;width:100%;float: left; font-family: 楷体; }
 footer .footer-mid ul li a{ color: aliceblue;font-size: 0.7em}
 footer .footer-mid .links{width: 30%;}
 footer .footer-mid .maps{width: 30%;}
@@ -47,3 +115,17 @@ footer .footer-mid .contact{width: 30%;}
 footer .footer-bottom{width:100%;height:20px;background: #000;text-align: center; }
 footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 footer .footer-bottom p a{color: cadetblue;}
+
+/*----------- [go top]-----------*/
+#tbox { width: 54px; float: right; position: fixed; right: 20px; bottom: 15px; _position: absolute; _bottom: auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+    _margin-bottom: 15px; }/*���IE6�²����� position:fixed ������*/
+#togbook, #gotop { width: 54px; height: 56px; display: block; background:url(../img/icons.png) no-repeat  #111 ;box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px;}
+#togbook { margin: 5px 0 ;background-position:10px -407px;}
+#gotop {background-position:12px -365px;}
+#togbook:hover, #gotop:hover { opacity: 0.5 }
+
+
+
+.wish_box{height:650px;margin:20px;position:relative;left:10%;width:80%;}
+.wish{background:url(../img/wish_bg.png) no-repeat 0 0;color:#000;height:166px;padding:10px 20px 30px 20px;width:185px;}
+.wish-close{background:url(../img/wish_close_bg.png) no-repeat 0 0;display:none;position:absolute;right:5px;top:-5px;width:17px;height:17px;}
