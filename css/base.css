@@ -17,3 +17,8 @@ body{font:normal 100% Arial,sans-serif; font-size:22px; background:#333;color: #
 textarea,input{ word-wrap:break-word; word-break:break-all; padding:0;}
 img { width:100%; -ms-interpolation-mode: bicubic;}
 footer, header, menu, nav {display: block;}
+::-webkit-scrollbar {width: 14px;height: auto;}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {border-radius: 10px;border: 5px solid transparent;}
+::-webkit-scrollbar-track {box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-thumb {min-height: 20px;background-clip: content-box;box-shadow:0 0 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-corner {background: transparent;}
