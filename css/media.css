@@ -1,8 +1,13 @@
 @charset "utf-8";
 /*================【屏幕：1200-1359】==================*/
 @media screen and (min-width: 1200px) and (max-width: 1359px){
+    /*------------- [news] -------------*/
     .content_core aside { width: 25%; float: left; margin: 20px 0 0 20px; }
     .news_right { width: 25%; float: left; margin: 20px 0 0 20px; }
+    /*------------- [download] -------------*/
+    .news_left .download_content .download_core .top_box .top_info{margin-bottom: 2px;}
+    .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 0px 0 0px 10px;}
+    .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0px 0 0px 10px;}
 }
 
 /*================【屏幕：1024-1199】==================*/
@@ -28,9 +33,14 @@
     /*------------- content_core -------------*/
     .content_core{width: 100%;position: relative;top:20px;left:10%;right:10%;overflow: hidden;clear: both;}
     .blog_list>li {width:100%;padding: 20px 0;border-right: #111 2px solid; }
-
+    /*------------- [news] -------------*/
     .content_core aside { width: 28%; float: left; margin: 20px 0 0 20px; }
     .news_right { width: 28%; float: left; margin: 20px 0 0 20px; }
+    /*------------- [download] -------------*/
+    .news_left .download_content .download_core .top_box .top_info{margin-bottom: 2px;}
+    .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 0px 0 0px 10px;}
+    .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0px 0 0px 10px;}
+
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -59,9 +69,16 @@
     /*------------- content_core -------------*/
     .content_core{width: 100%;position: relative;top:20px;left:10%;right:10%;overflow: hidden;clear: both;}
     .blog_list>li {width:100%;padding: 20px 0;border-right: #111 2px solid; }
-
+    /*------------- [news] -------------*/
     .content_core aside { width: 30%; float: left; margin: 20px 0 0 20px; }
     .news_right { width: 30%; float: left; margin: 20px 0 0 20px; }
+    /*------------- [download] -------------*/
+    .news_left .download_content .download_core .top_box .top_info{margin-bottom: 2px;}
+    .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 0px 0 0px 10px;}
+    .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0px 0 0px 10px;}
+    .news_left .download_content .download_core .top_box{width: 43%;}
+    /*------------- [about] -------------*/
+    .about_banner p{font-size: 16px}
     /*---------- [footer] -----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align:center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -121,10 +138,12 @@
     .likes, .comments { float: right; }
     .likes { background-position: 0 -240px; }
     .comments { background-position: 0 -220px; }
-
+    /*------------- [news] -------------*/
     .content_core aside{display: none;}
     .news_right{display: none;}
-    .news_left{    width: 90%;margin-left: 5% !important;}
+    .news_left{width: 90%;margin-left: 5% !important;}
+    /*------------- [about] -------------*/
+    .about_banner p{font-size: 16px}
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -148,7 +167,7 @@
     .m_nav ul li a:hover{ margin-left: 20%;}
 
     /*----------[content]-----------*/
-    .content .content_top { width:100%;height: 540px; position:relative;top:5px;left:3%;right: 3%;  overflow: hidden; clear: both; }
+    .content .content_top { width:100%;height: 400px; position:relative;top:5px;left:3%;right: 3%;  overflow: hidden; clear: both; }
     /*------------- banner -------------*/
     .content .content_top .banner_hide {  width: 94%; height: 40%;  -webkit-animation: pageTop 6s ease 0.5s backwards; -moz-animation: pageTop 6s ease 0.5s backwards; -ms-animation: pageTop 6s ease 0.5s backwards; -o-animation: pageTop 6s ease 0.5s backwards; animation: pageTop 6s ease 0.5s backwards; float: left; }
     .content .content_top .banner_hide img{ height: 100%;width: 100%}
@@ -184,10 +203,16 @@
     .likes, .comments { float: right; }
     .likes { background-position: 0 -240px; }
     .comments { background-position: 0 -220px; }
-
+    /*------------- [news] -------------*/
     .content_core aside{display: none;}
     .news_right{display: none;}
-    .news_left{    width: 90%;margin-left: 5% !important;}
+    .news_left{width: 90%;margin-left: 5% !important;}
+    /*------------- [download] -------------*/
+    .news_left .download_content .download_core .top_box .top_info{margin-bottom: 2px;}
+    .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 0 0 0 10px;}
+    .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0 0 0 10px;}
+    /*------------- [about] -------------*/
+    .about_banner p{font-size: 16px}
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -211,7 +236,7 @@
     .m_nav ul li a:hover{ margin-left: 20%;}
 
     /*----------[content]-----------*/
-    .content .content_top { width:100%;height: 540px; position:relative;top:5px;left:3%;right: 3%;  overflow: hidden; clear: both; }
+    .content .content_top { width:100%;height: 400px; position:relative;top:5px;left:3%;right: 3%;  overflow: hidden; clear: both; }
     /*------------- banner -------------*/
     .content .content_top .banner_hide {  width: 94%; height: 40%;  -webkit-animation: pageTop 6s ease 0.5s backwards; -moz-animation: pageTop 6s ease 0.5s backwards; -ms-animation: pageTop 6s ease 0.5s backwards; -o-animation: pageTop 6s ease 0.5s backwards; animation: pageTop 6s ease 0.5s backwards; float: left; }
     .content .content_top .banner_hide img{ height: 100%;width: 100%}
@@ -247,11 +272,34 @@
     .likes, .comments { float: right; }
     .likes { background-position: 0 -240px; }
     .comments { background-position: 0 -220px; }
-
+    /*------------- [news] -------------*/
     .content_core aside{display: none;}
     .news_right{display: none;}
-    .news_left{    width: 90%;margin-left: 5% !important;}
+    .news_left{width: 90%;margin-left: 5% !important;}
+    /*------------- [download] -------------*/
+    .news_left .download_content>li{padding: 20px 10px 20px 12px;}
+    .content{margin-right: 1%;}
+    /*------------- [about] -------------*/
+    .about_banner p{font-size: 16px}
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
+}
+
+/*================【屏幕：<560】==================*/
+@media only screen and (max-width: 560px) {
+    /*------------- [download] -------------*/
+    .news_left .download_content .download_core .img_left{width: 94% !important;}
+    .news_left .download_content .download_core .top_box{width: 96% !important;}
+    .news_left .download_content .download_core .top_box .top_info{margin-bottom: 2px;}
+    .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 10px 0 10px 10px;}
+    .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 10px 0 10px 10px;}
+    /*------------- [about] -------------*/
+    .about_banner p{font-size: 14px}
+}
+
+/*================【屏幕：<1240】==================*/
+@media only screen and (max-width: 1240px) {
+    /*------------- [download] -------------*/
+    .memorial_day{ display: none;}
 }

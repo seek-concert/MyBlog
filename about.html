@@ -32,10 +32,10 @@
             <li><a href="/">首&nbsp;&nbsp;&nbsp;页</a></li>
             <li><a href="/news.html" title="文章资讯">文章资讯</a></li>
             <li><a href="/download.html" title="工具下载">工具下载</a></li>
-            <li><a href="/msgboard.html" title="留言墙"  class="nav_toggle" >留言墙</a></li>
+            <li><a href="/msgboard.html" title="留言墙" >留言墙</a></li>
             <li><a href="/poetry.html" title="诗和远方">诗和远方</a></li>
             <li><a href="/gossip.html" title="闲谈">闲谈</a></li>
-            <li><a href="/about.html" title="关于我">关于我</a></li>
+            <li><a href="/about.html" title="关于我" class="nav_toggle" >关于我</a></li>
         </ul>
     </nav>
     <!--end pa nav-->
@@ -61,45 +61,51 @@
 
 <!--content-->
 <div class="content">
-    <div class="news_left" style="margin-top: -38px">
-        <div id="SOHUCS" sid="66f5d0126da20392e9054af2d7b8a702"></div>
-        <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
-        <script type="text/javascript">
-            window.changyan.api.config({
-                appid: 'cytRf8cYC',
-                conf: 'prod_7645c7666d7312d774d9c19602f0c5be'
-            });
-        </script>
-
-        <!--&lt;!&ndash; 多说评论框 start &ndash;&gt;-->
-        <!--<div class="ds-thread" data-thread-key="5eab7e4c363e4cb8bed0efa3604e6b42" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
-        <!--&lt;!&ndash; 多说评论框 end &ndash;&gt;-->
-        <!--&lt;!&ndash; 多说公共JS代码 start (一个网页只需插入一次) &ndash;&gt;-->
-        <!--<script type="text/javascript">-->
-            <!--var duoshuoQuery = {short_name:"wfyvv"};-->
-            <!--(function() {-->
-                <!--var ds = document.createElement('script');-->
-                <!--ds.type = 'text/javascript';ds.async = true;-->
-                <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';-->
-                <!--ds.charset = 'UTF-8';-->
-                <!--(document.getElementsByTagName('head')[0]-->
-                    <!--|| document.getElementsByTagName('body')[0]).appendChild(ds);-->
-            <!--})();-->
-        <!--</script>-->
-        <!--&lt;!&ndash; 多说公共JS代码 end &ndash;&gt;-->
-
+    <div class="about_core">
+        <div class="about_banner">
+            <p data-scroll-reveal="enter top over 2s" data-scroll-reveal-id="3" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 2s ease-in-out 0s,  opacity 2s ease-in-out 0s;transition: transform 2s ease-in-out 0s, opacity 2s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">我们不停的翻弄着回忆，却再也找不回那时的自己</p>
+            <p data-scroll-reveal="enter left over 2s after 1s" data-scroll-reveal-id="4" style="-webkit-transform: translatex(0);transform: translatex(0);opacity: 1;-webkit-transition: -webkit-transform 2s ease-in-out 1s,  opacity 2s ease-in-out 1s;transition: transform 2s ease-in-out 1s, opacity 2s ease-in-out 1s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">人生，是一场盛大的遇见。若你懂得，就请珍惜。</p>
+            <p data-scroll-reveal="enter bottom over 2s after 2s" data-scroll-reveal-id="5" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 2s ease-in-out 2s,  opacity 2s ease-in-out 2s;transition: transform 2s ease-in-out 2s, opacity 2s ease-in-out 2s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">无论下多久的雨，最后都会有彩虹；无论你多么悲伤，要相信幸福在前方等候.</p>
+        </div>
+        <div class="memorial_day">
+            <div class="time_axis"></div>
+            <ul>
+                <li class="n1"><a href="/">接触PHP</a>
+                    <div class="dateview">2014</div>
+                </li>
+                <li class="n2"><a href="/">第一个项目</a>
+                    <div class="dateview">2015-06</div>
+                </li>
+                <li class="n3"><a href="/">完成多个项目</a>
+                    <div class="dateview">2016-05</div>
+                </li>
+                <li class="n4"><a href="/">开始工作生涯</a>
+                    <div class="dateview">2017-04</div>
+                </li>
+                <li class="n5"><a href="/">创建个人博客</a>
+                    <div class="dateview">2018-12</div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="news_right" style="width: 200px;height: 300px;">
-        <img src="img/aboutphoto.png" />
-    </div>
-
-
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 </div>
 <!--content end-->
 
 <!--footer-->
-<footer style="display: none">
+<footer>
     <div class="footer-mid">
         <div class="links">
             <p>MyCood</p>
@@ -134,9 +140,5 @@
 <!-- gotop end -->
 <script src="js/jquery.min.js?v=2.1.4"></script>
 <script src="js/common.js"></script>
-<script>
-
-    setTimeout(function () { $('footer').css('display','block'); }, 2000);
-</script>
 </body>
 </html>
