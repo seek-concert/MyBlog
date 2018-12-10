@@ -33,7 +33,7 @@ header nav ul li a:hover { color: cadetblue !important; background: rgba(20, 20,
 .content a:hover{color: cadetblue;}
 /*------------- [banner] -------------*/
 .content .content_top .banner_hide {  width: 48%; height: 100%;  -webkit-animation: pageTop 6s ease 0.5s backwards; -moz-animation: pageTop 6s ease 0.5s backwards; -ms-animation: pageTop 6s ease 0.5s backwards; -o-animation: pageTop 6s ease 0.5s backwards; animation: pageTop 6s ease 0.5s backwards; float: left; }
-.content .content_top .banner_hide img{ height: 100%;width: 100%}
+.content .content_top .banner_hide img{ height: 100%;width: 100%;}
 .content .content_top .banner_font {font-size: 0.5em; display:block;height:40%;width:46%;position: absolute; top: 20%; padding-left: 1%; padding-right: 1%; background: rgba(153,153,153,.8); color: white; opacity: 0; -webkit-transition: opacity .75s ease-out; -moz-transition: opacity .75s ease-out; -o-transition: opacity .75s ease-out; transition: opacity .75s ease-out; }
 .content .content_top .banner_hide:hover .banner_font { opacity: 1; } /* 用opacity 设置鼠标放上去显示文字的效果 */
 .content .content_top .banner_font strong { display: block; line-height: 40px }
@@ -197,64 +197,24 @@ footer .footer-bottom p a{color: cadetblue;}
 .about_core{width: 80%;margin-left: 12%;margin-right: 8%}
 .about_banner{vertical-align:middle;height: 180px;text-align: center;overflow: hidden;margin: 20px 30px;line-height: 30px;text-shadow: #fff 1px 1px 1px;background: url(../img/banner_top.jpg) no-repeat -0px center;color: #333;padding: 40px 0 0 0;}
 .memorial_day{    overflow: hidden;position: relative;padding: 60px;}
-.time_axis {
-    background: #e9f5fb;
-    height: 6px;
-    width: 100%;
-    animation: time_a 5s;
-    -moz-animation: time_a 5s;
-    -webkit-animation: time_a 5s;
-    -o-animation: time_a 5s;
+.time_axis {background: #e9f5fb;height: 6px;width: 100%;animation: time_a 5s;-moz-animation: time_a 5s;-webkit-animation: time_a 5s;-o-animation: time_a 5s;}
+.memorial_day ul li.n1 {position: absolute;top: 54px;left: 90px;}
+.memorial_day ul li.n2 {position: absolute;top: 54px;left: 220px;}
+.memorial_day ul li.n3 {position: absolute;top: 54px;left: 390px;}
+.memorial_day ul li.n4 {position: absolute;top: 54px;left: 580px;}
+.memorial_day ul li.n5 {position: absolute;top: 54px;left: 790px;}
+.memorial_day ul li::before {content: "";width: 14px;height: 14px;border-radius: 50%;position: absolute;background: #0979b1;border: 3px solid #e9f6fb;}
+.memorial_day ul li a {margin-top: 30px;display: block;color: #fff;}
+.dateview {position: absolute;top: -50px;left: 71px;display: block;width: 88px;background: url(../img/dtime.png) no-repeat;color: #FFF;height: 46px;line-height: 30px;text-align: center;}
+.memorial_day { overflow: hidden; position: relative; padding: 60px; }
+.time_axis { background: #e9f5fb; height: 6px; width: 100%; animation: time_a 5s; -moz-animation: time_a 5s; /* Firefox */ -webkit-animation: time_a 5s; /* Safari and Chrome */ -o-animation: time_a 5s; /* Opera */ }
+.banner { height: 180px; text-align: center; overflow: hidden; margin: 30px; line-height: 30px; text-shadow: #fff 1px 1px 1px; background: url(../images/banner_top.jpg) no-repeat -90px center; color: #333; padding: 40px 0 0 0 }
+
+/* 畅言 */
+#SOHUCS #SOHU_MAIN .wrap-word-gw{
+    color:#999 !important;
 }
-.memorial_day ul li.n1 {
-    position: absolute;
-    top: 54px;
-    left: 90px;
-}
-.memorial_day ul li.n2 {
-    position: absolute;
-    top: 54px;
-    left: 220px;
-}
-.memorial_day ul li.n3 {
-    position: absolute;
-    top: 54px;
-    left: 390px;
-}
-.memorial_day ul li.n4 {
-    position: absolute;
-    top: 54px;
-    left: 580px;
-}
-.memorial_day ul li.n5 {
-    position: absolute;
-    top: 54px;
-    left: 790px;
-}
-.memorial_day ul li::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    position: absolute;
-    background: #0979b1;
-    border: 3px solid #e9f6fb;
-}
-.memorial_day ul li a {
-    margin-top: 30px;
-    display: block;
-    color: #fff;
-}
-.dateview {
-    position: absolute;
-    top: -50px;
-    left: 71px;
-    display: block;
-    width: 88px;
-    background: url(../img/dtime.png) no-repeat;
-    color: #FFF;
-    height: 46px;
-    line-height: 30px;
-    text-align: center;
+#SOHUCS #SOHU_MAIN .textarea-fw{
+    color:#999 !important;
 }
 
