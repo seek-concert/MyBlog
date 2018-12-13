@@ -196,6 +196,22 @@ footer .footer-bottom p a{color: cadetblue;}
 /*++++++++++++++++++++++++++++++【about】++++++++++++++++++++++++++++++++++*/
 .about_core{width: 80%;margin-left: 12%;margin-right: 8%}
 .about_banner{vertical-align:middle;height: 180px;text-align: center;overflow: hidden;margin: 20px 30px;line-height: 30px;text-shadow: #fff 1px 1px 1px;background: url(../img/banner_top.jpg) no-repeat -0px center;color: #333;padding: 40px 0 0 0;}
+.about_banner p{
+    opacity: 0;      /*实先规定文字的状态是不显示的*/
+    animation: fade-in 4s ease 0s 1;    /*调用名称为fade-in的动画，全程动画显示时间4S，进入方式为ease，延时0S进入，播放次数1次*/
+    -webkit-animation: fade-in 4s ease 0s 1;
+    -moz-animation: fade-in 4s ease 0s 1;
+    -o-animation: fade-in 4s ease 0s 1;
+    -ms-animation: fade-in 4s ease 0s 1;
+
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+
+}
 .memorial_day{    overflow: hidden;position: relative;padding: 60px;}
 .time_axis {background: #e9f5fb;height: 6px;width: 100%;animation: time_a 5s;-moz-animation: time_a 5s;-webkit-animation: time_a 5s;-o-animation: time_a 5s;}
 .memorial_day ul li.n1 {position: absolute;top: 54px;left: 90px;}
@@ -210,6 +226,29 @@ footer .footer-bottom p a{color: cadetblue;}
 .time_axis { background: #e9f5fb; height: 6px; width: 100%; animation: time_a 5s; -moz-animation: time_a 5s; /* Firefox */ -webkit-animation: time_a 5s; /* Safari and Chrome */ -o-animation: time_a 5s; /* Opera */ }
 .banner { height: 180px; text-align: center; overflow: hidden; margin: 30px; line-height: 30px; text-shadow: #fff 1px 1px 1px; background: url(../images/banner_top.jpg) no-repeat -90px center; color: #333; padding: 40px 0 0 0 }
 
+
+.about {
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+    line-height: 22px;
+}
+.about h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    background: #2a7497;
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 0 30px 30px 0;
+    box-shadow: #21566f 1px 1px 1px;
+    border-left: #dae1e4 6px solid;
+}
+.about p {
+    margin-bottom: 20px;
+    text-align: left;
+    text-indent: 2em;
+}
 /* 畅言 */
 #SOHUCS #SOHU_MAIN .wrap-word-gw{
     color:#999 !important;
