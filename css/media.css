@@ -41,7 +41,9 @@
     .news_left .download_content .download_core .top_box .top_time{font-size: 16px;margin: 0px 0 0px 10px;}
     .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0px 0 0px 10px;}
 
-    /*----------[footer]-----------*/
+    /*------------- [about] -------------*/
+    .about_core{ margin-left: 10%}
+        /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
 }
@@ -79,6 +81,7 @@
     .news_left .download_content .download_core .top_box{width: 43%;}
     /*------------- [about] -------------*/
     .about_banner p{font-size: 16px}
+    .about_core{ margin-left: 8%}
     /*---------- [footer] -----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align:center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -144,6 +147,7 @@
     .news_left{width: 90%;margin-left: 5% !important;}
     /*------------- [about] -------------*/
     .about_banner p{font-size: 16px}
+    .about_core{ margin-left: 3%;width: 94%}
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -213,6 +217,7 @@
     .news_left .download_content .download_core .top_box .top_tj{font-size: 16px;margin: 0 0 0 10px;}
     /*------------- [about] -------------*/
     .about_banner p{font-size: 16px}
+    .about_core{ margin-left: 1%;width: 98%}
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
@@ -281,6 +286,12 @@
     .content{margin-right: 1%;}
     /*------------- [about] -------------*/
     .about_banner p{font-size: 16px}
+    .about_banner{ display: none;}
+    .about p{font-size: 16px;}
+    .about_core {
+        width: 96%;
+        margin-left: 2%;
+    }
     /*----------[footer]-----------*/
     footer .footer-bottom{width:100%;height:40px;background: #000;text-align: center;}
     footer .footer-bottom p{font-size: 0.8em;color: #464647;}
